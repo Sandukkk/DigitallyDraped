@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DigitallyDraped</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'home/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navabr-light bg-light sticky-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="{% static 'home/images/logo.png' %}"></a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse"     
+    data-target="#navbarResponsive">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Services</a>
+        </li>
+        <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Team</a>
+        </li> -->
+        <li class="nav-item active">
+            <a class="nav-link" href="#connect">Connect</a>
+        </li>
+
+
+    </ul>
+</div>
+</div>
+</nav>
+<!--- Image Slider -->
+ <div id="slides" class="carousel" data-ride="carousel"> <!-- carousel is sliding or slideshow -->
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner ">
+        <div class="carousel-item active">
+            <img src="{% static 'home/images/one.webp' %}">
+            <div class="carousel-caption">
+                <h1 class="display-2">DigitallyDraped</h1>
+                <h3>AI meets Fashion</h3>
+                <!-- <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button> -->
+                <a href="http://127.0.0.1:8000/trial/">
+                <button type="button" class="btn btn-primary btn-lg">Try now</button></a>  <!--by default primary makes blue btn-->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'home/images/two.webp' %}">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'home/images/six.webp' %}">
+        </div>
+    </div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <a id = "about">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead">This website utilizes AI technology to simplify the process of designing and creating fashion. Subscribers can express their personal vision and style to create unique and personalized clothing. The website aims to make fashion more accessible and easy to navigate for its users.
+            </p>
+        </div>
+        </a>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <button type="button" id="trial" class="btn btn-outline-secondary btn-lg">Explore</button>
+        </div>
+    </div>
+</div>
+
+<!--- Welcome Section -->
+
+
+<!--- Three Column Section -->
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-6">
+            <h2>Fashion Revamped</h2>
+            <p>This is an AI-based solution for generating clothing and fashion designs with visual representations, tailored to the specific needs of the user. The goal is to revolutionize the fashion industry by creating unique designs using generative AI. This technology can be used by garment manufacturers to reduce the cost of hiring fashion designers, and by existing fashion brands to easily create new lines of clothing.</p>
+            <p>Additionally, this AI-based solution can also assist individual fashion designers and small businesses in creating unique designs, without the need for extensive knowledge or experience in fashion design. It can also be used for creating custom-made clothing for clients, based on their preferences and measurements. The AI system can also be trained on various fashion styles, trends, and preferences, making it a versatile tool for the fashion industry.
+            </p>
+                <br>
+                <a href="#" class="btn btn-primary">Learn More</a>
+
+        </div>
+        <div class="col-lg-6">
+            <img src="{% static 'home/images/hang.jpg' %}" class="img-fluid">
+        </div>
+    </div>
+</div>
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed">
+            
+        </div>
+    </div>
+</figure>
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-6">
+            <h2>A game changer</h2>
+            <br>
+            <p>The AI-based solution can also be integrated with virtual try-on technology, allowing customers to see how the clothing would look on them before making a purchase, and also provide real-time feedback on designs and modifications. This will enhance the customer experience and increase customer satisfaction.
+
+            </p>
+            <p>It has the potential to revolutionize the fashion industry by streamlining the design process, reducing costs, and creating unique and personalized clothing for customers. It can be used by a wide range of businesses, from large garment manufacturers to small fashion designers, to create new and innovative designs..</p>
+                <p>Currently, there are several research works and startups that are working on AI-generated fashion, some of them have even created some basic working models and have raised funding. However, the technology is still in its early stages and significant research and development is still required before it can be widely adopted by the fashion industry. This is just a minimun viable product for the idea demonstration.</p>
+               </div>
+        <div class="col-lg-6">
+            <img src="{% static 'home/images/work.jpg' %}" class="img-fluid">
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Connect</h2>
+
+        </div>
+        <a id = "connect">
+        <div class="col-12 social padding">
+            <a href="https://www.facebook.com/sandhya.baral.9210/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/KBataju" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/roshani-poudel-03ab901b5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sandhyab.l/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@sandhyaa9050/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        </a>
+    </div>
+</div>
+
+<!--- Footer -->
+
+
+<script src="{% static 'home/js/script.js' %}"></script>
+
+</body>
+</html>
